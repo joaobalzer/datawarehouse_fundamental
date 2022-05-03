@@ -337,5 +337,12 @@ with
         left join orders_detail_with_sk order_dtl on orders.order_id = order_dtl.order_id
     )
    select * from final 
-)
+);
 
+DROP TABLE IF EXISTS `upheld-dragon-348802.Postgres.northwind_public_stg_customers`;
+DROP TABLE IF EXISTS `upheld-dragon-348802.Postgres.northwind_public_stg_employees`;
+DROP TABLE IF EXISTS `upheld-dragon-348802.Postgres.northwind_public_stg_order_detail`;
+DROP TABLE IF EXISTS `upheld-dragon-348802.Postgres.northwind_public_stg_orders`;
+DROP TABLE IF EXISTS `upheld-dragon-348802.Postgres.northwind_public_stg_products`;
+DROP TABLE IF EXISTS `upheld-dragon-348802.Postgres.northwind_public_stg_shippers`;
+DROP TABLE IF EXISTS `upheld-dragon-348802.Postgres.northwind_public_stg_suppliers`;
